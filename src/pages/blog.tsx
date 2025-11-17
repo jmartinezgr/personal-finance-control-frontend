@@ -1,5 +1,5 @@
-import { title } from "@/components/primitives";
-import DefaultLayout from "@/layouts/default";
+import { title } from "@/common/components/primitives";
+import DefaultLayout from "@/common/layouts/default";
 
 export default function DocsPage() {
   return (

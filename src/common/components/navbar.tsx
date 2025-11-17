@@ -14,16 +14,16 @@ import {
 import { link as linkStyles } from "@heroui/theme";
 import clsx from "clsx";
 
-import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
+import { siteConfig } from "@/common/config/site";
+import { ThemeSwitch } from "@/common/components/theme-switch";
 import {
   TwitterIcon,
   GithubIcon,
   DiscordIcon,
   HeartFilledIcon,
   SearchIcon,
-} from "@/components/icons";
-import { Logo } from "@/components/icons";
+} from "@/common/components/icons";
+import { Logo } from "@/common/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
@@ -66,7 +66,7 @@ export const Navbar = () => {
               <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
                 color="foreground"
                 href={item.href}
